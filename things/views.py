@@ -14,6 +14,6 @@ def home(request):
 
 class ThingForm(forms.Form):
     name = forms.CharField(max_length=35)
-    description = forms.CharField(widget=forms.Textarea(attrs={'maxlength': '120'}))  # 设置 description 字段的最大长度为 120，同时使用 Textarea 将其渲染成多行文本框
+    description = forms.CharField(widget=forms.Textarea(attrs={'maxlength': '120'}))
     quantity = forms.IntegerField(widget=forms.NumberInput)
 
